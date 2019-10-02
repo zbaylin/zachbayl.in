@@ -6,142 +6,85 @@
   --blue: #0078D7;
 }
 
-#name {
-  font-size: 2em;
-  margin: 0 0 .1em 0;
-}
-
-#portrait {
-  max-width: 25%;
-}
-
-#portrait > img {
-  width: 100%;
-  padding: .4em;
-  outline: 1px solid lightgrey
-}
-
 .main-container {
-  margin-left: 10vw;
-  margin-right: 10vw;
-  margin-top: 20px;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-bottom: 2rem;
 }
 
-.container {
-  margin-left: 3em;
-  margin-right: 3em;
-  margin-top: 2em;
-  margin-bottom: 2em;
+li {
+  margin-top: 0 !important
 }
 
-.flex-row {
-  display: flex;
-  flex-direction: row;
-  flex: 1;
-  align-items: 'stretch';
+ul > ul {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important
 }
 
-.flex-row > * {
-  margin-left: 1em;
-  margin-right: 1em;
-}
-
-.flex-center {
-  align-items: center;
-  justify-content: center;
-}
-
-.title-row {
-  align-items: center;
-}
-
-.flex-grow-2 {
-  flex-grow: 2;
+.navbar {
+  margin-top: .5em;
+  margin-bottom: .5em;
 }
 
 .line {
   height: 1px;
   background-color: lightgrey;
-  margin-top: .5em;
-  margin-bottom: .5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .bar {
-  width: 1px;
+  width: 1px !important;
   background-color: lightgrey;
-  margin-left: .5em;
-  margin-right: .5em;
-}
-
-.title {
-  font-size: 1.5em;
-}
-
-.title > span {
-  vertical-align: middle;
-}
-
-.title-icon {
-  height: 1.75em;
-  width: 1.75em;
-}
-
-.subtitle {
-  font-size: 1.2em
-}
-
-.italics {
-  font-style: italic
-}
-
-.nav-item {
-  margin-left: 1em;
   margin-right: 1em;
-  font-size: 1.25em;
 }
 
-.nav-icon {
-  margin-left: .5em;
-  margin-right: .5em;
-  padding: 6px;
-  height: 1.5em;
-  width: 1.5em;
+.text-underline {
+  text-decoration: underline grey;
 }
 
-.nav-icon:hover {
-  background-color: var(--teal);
-  border-radius: 4px;
+#nav-name {
+  font-weight: bold;
+  font-size: 1.6em;
 }
 
-a {
-  color: var(--blue);
-  text-decoration: none;
+#img-me {
+  width: 100%;
+  padding: .5em;
 }
 
-a:hover {
-  color: var(--teal)
+#blog-sidebar {
+  border-left: 1px solid lightgray;
+  padding-left: 1em
 }
 
-nav {
-  margin-bottom: 2em;
-}
-
-.hint {
-  color: lightgrey
-}
-
-.project-logo {
-  flex: 1
+@media only screen and (max-width: 600px) {
+  #blog-sidebar {
+    border: none;
+    padding: none;
+  }
 }
 
 .project-logo > img {
   width: 100%;
 }
 
-.about-project {
-  flex: 2;
+a.more-info {
+  font-size: .75em;
 }
 
-.more-info {
-  font-size: .6em;
+div.project {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+a.nav-icon {
+  width: 1.8em;
+  height: 1.8em;
+  margin-left: .4em;
+  margin-right: .4em;
+  padding: .2em;
+  border-radius: .25em;
 }

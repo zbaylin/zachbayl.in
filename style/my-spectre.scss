@@ -1,0 +1,8 @@
+$primary-color: #102855;
+$secondary-color: #98CEE7;
+
+.nav-icon:hover{
+  background-color: $secondary-color
+}
+
+@import "node_modules/spectre.css/src/spectre";

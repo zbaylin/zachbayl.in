@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
-nav=$(cat element/nav.html)
+nav_pre=$(cat element/nav.html)
 
-cat >script/elts.js <<SCRIPT
+nav=$(sed 's/"/\\"/g' <<< $nav_pre)
+
+cat > script/elts.js <<SCRIPT
 window.myElements = {
   "nav": "$(echo $nav)"
 }

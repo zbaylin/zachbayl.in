@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="script/elts.js"></script>
-  <script src="script/main.js"></script>
-  <link rel="stylesheet" href="style/main.css">
+  <link rel="stylesheet" href="/style/main.css" />
+  <link rel="stylesheet" href="/style/my-spectre.css" />
+  <script src="/script/elts.js"></script>
+  <script src="/script/main.js"></script>
   <title>Zach Baylin :: Software Engineer and CS Student</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
     </nav>
     <div class="line"></div>
     <div class="container">
-      <p class="title">Table of Contents</p>
+      <h4 class="text-underline">Table of Contents</h4>
       <ul>
         <li><a href="#rolltrax">Rolltrax</a></li>
         <li><a href="#bookworm">BookWorm</a></li>
@@ -25,68 +26,68 @@
         <li><a href="#rofi-wifi-menu">rofi-wifi-menu</a></li>
       </ul>
       <div class="line"></div>
-      <div id="rolltrax">
-        <p class="title">Rolltrax <a class="more-info" href="https://rolltrax.com">More info</a></p>
-        <div class="flex-row">
-          <div class="about-project">
+      <div class="project" id="rolltrax">
+        <h5>Rolltrax <a class="more-info" href="https://rolltrax.com">More info</a></h5>
+        <div class="columns">
+          <div class="column col-8 col-sm-12">
             I co-founded Rolltrax alongside Ohad Rau and Dr. Brian Patterson in 2017. Our original goal was to create a localized cloud based school attendance system for students who participate in work-based learning programs. This concept quickly ballooned into a full software stack, including a website, an API, a desktop app, and a mobile app. Now Rolltrax helps coordinators of work-based learning programs manage attendance, employee evaluations, routine job visit planning, payroll information, and more. I currently serve as the CTO and lead developer, where I am in charge of developing basically every aspect of the software stack (what can I say, our team is small 🤷‍♂️)
           </div>
-          <div class="project-logo">
+          <div class="project-logo column col-4 col-sm-12">
             <img src="/img/logo/rolltrax.png" alt="">
           </div>
         </div>
       </div>
-      <div id="bookworm">
-        <p class="title">BookWorm <a class="more-info" href="https://github.com/zbaylin/bookworm">More info</a></p>
-        <div class="flex-row">
-          <div class="about-project">
+      <div class="project" id="bookworm">
+        <h5 class="title">BookWorm <a class="more-info" href="https://github.com/zbaylin/bookworm">More info</a></h5>
+        <div class="columns">
+          <div class="column col-8 col-sm-12">
             BookWorm is a project I developed for the FBLA Coding and Programming event in 2019. The project description mandated that submissions create a GUI that helps manage the distribution of eBooks from librarians to patrons. I chose to write my GUI in Python using the Qt GUI framework, combining the two using the officially supported Qt for Python bindings. It supported numerous features, like manager/user stratification, a centralized cloud based backend, PDF DRM generation, and more. It won first place at the Georgia FBLA State Leadership Conference, and fifth place at the National Leadership Conference in San Antonio, TX.
           </div>
-          <div class="project-logo">
+          <div class="project-logo column col-4 col-sm-12">
             <img src="/img/logo/bookworm.png" alt="">
           </div>
         </div>
       </div>
-      <div id="bibliotech">
-        <p class="title">biblotech <a class="more-info" href="https://github.com/zbaylin/bibliotech">More info</a></p>
-        <div class="flex-row">
-          <div class="about-project">
+      <div class="project" id="bibliotech">
+        <h5 class="title">biblotech <a class="more-info" href="https://github.com/zbaylin/bibliotech">More info</a></h5>
+        <div class="columns">
+          <div class="column col-8 col-sm-12">
             bibliotech is an application my team and I designed for the FBLA Mobile Application Development event in 2018. The main goal of the project was to provide librarians and students an easy way to navigate a physical library. The app includes more advanced features, like an interactive map of the library, as well as integration with other services like Google Books and GoodReads. We wrote the mobile app in Flutter, and used Ruby + Sinatra on the backend. Our submission one fourth place at the Georgia FBLA State Leadership Conference.
           </div>
-          <div class="project-logo">
+          <div class="project-logo column col-4 col-sm-12">
             <img src="/img/logo/bibliotech.png" alt="">
           </div>
         </div>
       </div>
-      <div id="traveller">
-        <p class="title">Traveller <a class="more-info" href="https://github.com/zbaylin/traveller">More info</a></p>
-        <div class="flex-row">
-          <div class="about-project">
+      <div class="project" id="traveller">
+        <h5 class="title">Traveller <a class="more-info" href="https://github.com/zbaylin/traveller">More info</a></h5>
+        <div class="columns">
+          <div class="column col-8 col-sm-12">
             Traveller was an extra credit project a partner and I developed for my MATH 3012 (Applied Combinatorics) class at Georgia Tech. It was a proof-of-concept application that used OpenStreetMap routing data to solve specific cases of the Travelling Salesman problem, using both the greedy algorithm and Dijkstra's algorithm. The program is written in Nim, with data being inputted via CSV.
           </div>
-          <div class="project-logo">
+          <div class="project-logo column col-4 col-sm-12">
             <img src="/img/logo/traveller.svg" alt="">
           </div>
         </div>
       </div>
-      <div id="security-py">
-        <p class="title">SECurity-py <a class="more-info" href="https://github.com/zbaylin/security-py">More info</a></p>
-        <div class="flex-row">
-          <div class="about-project">
+      <div class="project" id="security-py">
+        <h5 class="title">SECurity-py <a class="more-info" href="https://github.com/zbaylin/security-py">More info</a></h5>
+        <div class="columns">
+          <div class="column col-8 col-sm-12">
             SECurity-py originally started as a project to fetch quarterly SEC filings from hedge funds and analyze trends between quarters. It ended up expanding to other types of filings, and now supports Excel output, and can function as an Excel macro itself. My father initially requested this project from me, and it eventually became a fully functional application
           </div>
-          <div class="project-logo">
+          <div class="project-logo column col-4 col-sm-12">
             <img src="/img/logo/security-py.png" style="width: 50%">
           </div>
         </div>
       </div>
-      <div id="rofi-wifi-menu">
-        <p class="title">rofi-wifi-menu <a class="more-info" href="https://github.com/zbaylin/rofi-wifi-menu">More info</a></p>
-        <div class="flex-row">
-          <div class="about-project">
+      <div class="project" id="rofi-wifi-menu">
+        <h5 class="title">rofi-wifi-menu <a class="more-info" href="https://github.com/zbaylin/rofi-wifi-menu">More info</a></h5>
+        <div class="columns">
+          <div class="column col-8 col-sm-12">
             rofi-wifi-menu is a plugin for the rofi alt-space launcher that helps people connect to WiFi networks on NetworkManager-based systems using nmcli. It has amassed over 100 starts on Github, and is widely used in the Linux/Unix community on systems with basic desktop environments, such as openbox.
           </div>
-          <div class="project-logo">
+          <div class="project-logo column col-4 col-sm-12">
           </div>
         </div>
       </div>
