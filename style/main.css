@@ -65,6 +65,12 @@ ul > ul {
     border: none;
     padding: none;
   }
+
+  .main-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+  }
 }
 
 .project-logo > img {
