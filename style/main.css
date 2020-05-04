@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,700;1,400&display=swap');
 * {
-  font-family: 'Source Serif Pro', serif;
   --teal: #0099BC;
   --blue: #0078D7;
 }
@@ -86,6 +84,19 @@ div.project {
   padding-bottom: 1em;
 }
 
+.text-monospace {
+  font-family: monospace;
+}
+
+pre,
+code,
+kbd,
+samp,
+tt{
+  font-family:monospace,monospace;
+  font-size:1em;
+}
+
 a.nav-icon {
   width: 1.8em;
   height: 1.8em;
@@ -93,4 +104,15 @@ a.nav-icon {
   margin-right: .4em;
   padding: .2em;
   border-radius: .25em;
+}
+
+figure.figure > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.note {
+  font-size: .75em;
+  font-style: italic;
 }
