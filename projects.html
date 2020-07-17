@@ -1,97 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="/style/main.css" />
-  <link rel="stylesheet" href="/style/my-spectre.css" />
-  <script src="/script/elts.js"></script>
-  <script src="/script/main.js"></script>
-  <title>Zach Baylin :: Software Engineer and CS Student</title>
-</head>
-<body>
-  <div class="main-container">
-    <nav id="navigator">
-    </nav>
-    <div class="line"></div>
-    <div class="container">
-      <h4 class="text-underline">Table of Contents</h4>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/style/main.css" />
+    <script src="/script/elts.js"></script>
+    <script src="/script/main.js"></script>
+    <title>Zach Baylin :: Software Engineer and CS Student</title>
+  </head>
+  <body>
+    <div id="navigator"></div>
+    <div class="main-content">
+      <h1>Projects</h1>
       <ul>
+        <li><a href="#revery">Revery</a></li>
+        <li><a href="#onivim">Onivim</a></li>
         <li><a href="#rolltrax">Rolltrax</a></li>
-        <li><a href="#bookworm">BookWorm</a></li>
-        <li><a href="#bibliotech">bibliotech</a></li>
-        <li><a href="#traveller">Traveller</a></li>
-        <li><a href="#security-py">security-py</a></li>
-        <li><a href="#rofi-wifi-menu">rofi-wifi-menu</a></li>
+        <li><a href="#gba_flappybird">gba_flappybird</a></li>
+        <li><a href="#security-py">SECurity-py</a></li>
       </ul>
-      <div class="line"></div>
-      <div class="project" id="rolltrax">
-        <h5>Rolltrax <a class="more-info" href="https://rolltrax.com">More info</a></h5>
-        <div class="columns">
-          <div class="column col-8 col-sm-12">
-            I co-founded Rolltrax alongside Ohad Rau and Dr. Brian Patterson in 2017. Our original goal was to create a localized cloud based school attendance system for students who participate in work-based learning programs. This concept quickly ballooned into a full software stack, including a website, an API, a desktop app, and a mobile app. Now Rolltrax helps coordinators of work-based learning programs manage attendance, employee evaluations, routine job visit planning, payroll information, and more. I currently serve as the CTO and lead developer, where I am in charge of developing basically every aspect of the software stack (what can I say, our team is small 🤷‍♂️)
-          </div>
-          <div class="project-logo column col-4 col-sm-12">
-            <img src="/img/logo/rolltrax.png" alt="">
-          </div>
+      <hr>
+      <div id="revery" class="columns columns-vcentered">
+        <div>
+          <h2><a href="https://github.com/revery-ui/revery">Revery</a></h2>
+          <p>Revery is a cross platform UI framework written in ReasonML/OCaml. I became involved
+          in Revery after my good friend and Rolltrax co-founder Ohad Rau recommended I
+          contribute to the project. Initially, most of my contributions were about deepening native
+          integrations, like notifications, file dialogs, etc. In Summer 2020, I was an intern
+          at Outrun Labs, the company behind Revery. During this time, I added numerous features to
+          the framework, like <a href="/blog/font-fallback-revery.html">font fallback</a>, drag and
+          drop support, and many others.</p>
+        </div>
+        <div>
+          <img src="/img/logo/revery.png" alt="" class="project-img">
         </div>
       </div>
-      <div class="project" id="bookworm">
-        <h5 class="title">BookWorm <a class="more-info" href="https://github.com/zbaylin/bookworm">More info</a></h5>
-        <div class="columns">
-          <div class="column col-8 col-sm-12">
-            BookWorm is a project I developed for the FBLA Coding and Programming event in 2019. The project description mandated that submissions create a GUI that helps manage the distribution of eBooks from librarians to patrons. I chose to write my GUI in Python using the Qt GUI framework, combining the two using the officially supported Qt for Python bindings. It supported numerous features, like manager/user stratification, a centralized cloud based backend, PDF DRM generation, and more. It won first place at the Georgia FBLA State Leadership Conference, and fifth place at the National Leadership Conference in San Antonio, TX.
-          </div>
-          <div class="project-logo column col-4 col-sm-12">
-            <img src="/img/logo/bookworm.png" alt="">
-          </div>
+
+      <div id="onivim" class="columns columns-vcentered">
+        <div>
+          <h2><a href="https://github.com/onivim/oni2">Onivim</a></h2>
+          <p>Onivim is a modal text editor that aims to bring vim into the 21st century. At the bottom,
+            Onivim is a fork of vim called <a href="https://github.com/onivim/libvim"><code>libvim</code></a>.
+            The GUI part of Onivim is built using Revery -- in fact, Revery started as the UI layer of the
+            second iteration of Oni! I started working on Oni mostly during my Summer 2020 internship at
+            Outrun Labs, the developers of Oni. I mostly worked on editor features such as hover, signature
+            help, a changelog, etc.
+          </p>
+        </div>
+        <div>
+          <img src="/img/logo/onivim2.png" alt="" class="project-img">
         </div>
       </div>
-      <div class="project" id="bibliotech">
-        <h5 class="title">biblotech <a class="more-info" href="https://github.com/zbaylin/bibliotech">More info</a></h5>
-        <div class="columns">
-          <div class="column col-8 col-sm-12">
-            bibliotech is an application my team and I designed for the FBLA Mobile Application Development event in 2018. The main goal of the project was to provide librarians and students an easy way to navigate a physical library. The app includes more advanced features, like an interactive map of the library, as well as integration with other services like Google Books and GoodReads. We wrote the mobile app in Flutter, and used Ruby + Sinatra on the backend. Our submission one fourth place at the Georgia FBLA State Leadership Conference.
-          </div>
-          <div class="project-logo column col-4 col-sm-12">
-            <img src="/img/logo/bibliotech.png" alt="">
-          </div>
+
+      <div id="rolltrax" class="columns columns-vcentered">
+        <div>
+          <h2><a href="https://rolltrax.com">Rolltrax</a></h2>
+          <p>I co-founded Rolltrax alongside Ohad Rau and Dr. Brian Patterson in 2017. Our original goal was 
+            to create a localized cloud based school attendance system for students who participate in 
+            work-based learning programs. This concept quickly ballooned into a full software stack, including
+            a website, an API, a desktop app, and a mobile app. Now Rolltrax helps coordinators of work-based 
+            learning programs manage attendance, employee evaluations, routine job visit planning, payroll 
+            information, and more. I currently serve as the CTO and lead developer, where I am in charge of 
+            developing basically every aspect of the software stack (what can I say, our team is small 🤷‍♂️)
+          </p>
+        </div>
+        <div>
+          <img src="/img/logo/rolltrax.png" alt="" class="project-img">
         </div>
       </div>
-      <div class="project" id="traveller">
-        <h5 class="title">Traveller <a class="more-info" href="https://github.com/zbaylin/traveller">More info</a></h5>
-        <div class="columns">
-          <div class="column col-8 col-sm-12">
-            Traveller was an extra credit project a partner and I developed for my MATH 3012 (Applied Combinatorics) class at Georgia Tech. It was a proof-of-concept application that used OpenStreetMap routing data to solve specific cases of the Travelling Salesman problem, using both the greedy algorithm and Dijkstra's algorithm. The program is written in Nim, with data being inputted via CSV.
-          </div>
-          <div class="project-logo column col-4 col-sm-12">
-            <img src="/img/logo/traveller.svg" alt="">
-          </div>
+
+      <div id="gba_flappybird" class="columns columns-vcentered">
+        <div>
+          <h2><a href="https://github.com/zbaylin/gba_flappybird">gba_flappybird</a></h2>
+          <p>This was a project I developed for my CS2110 class. It adapts the famous Flappy Bird
+            game by dotGEARS onto the GBA. It is written entirely in C with assets drawn by me. The
+            objective of the game is the same as the original: fly through the world without hitting
+            any pipes.
+          </p>
         </div>
       </div>
-      <div class="project" id="security-py">
-        <h5 class="title">SECurity-py <a class="more-info" href="https://github.com/zbaylin/security-py">More info</a></h5>
-        <div class="columns">
-          <div class="column col-8 col-sm-12">
-            SECurity-py originally started as a project to fetch quarterly SEC filings from hedge funds and analyze trends between quarters. It ended up expanding to other types of filings, and now supports Excel output, and can function as an Excel macro itself. My father initially requested this project from me, and it eventually became a fully functional application
-          </div>
-          <div class="project-logo column col-4 col-sm-12">
-            <img src="/img/logo/security-py.png" style="width: 50%">
-          </div>
+
+      <div id="security-py" class="columns columns-vcentered">
+        <div>
+          <h2><a href="https://github.com/zbaylin/security-py">SECurity-py</a></h2>
+          <p>SECurity-py originally started as a project to fetch quarterly SEC filings from hedge
+            funds and analyze trends between quarters. It ended up expanding to other types of
+            filings, and now supports Excel output, and can function as an Excel macro itself. 
+            My father initially requested this project from me, and it eventually became a fully 
+            functional application
+          </p>
         </div>
       </div>
-      <div class="project" id="rofi-wifi-menu">
-        <h5 class="title">rofi-wifi-menu <a class="more-info" href="https://github.com/zbaylin/rofi-wifi-menu">More info</a></h5>
-        <div class="columns">
-          <div class="column col-8 col-sm-12">
-            rofi-wifi-menu is a plugin for the rofi alt-space launcher that helps people connect to WiFi networks on NetworkManager-based systems using nmcli. It has amassed over 100 starts on Github, and is widely used in the Linux/Unix community on systems with basic desktop environments, such as openbox.
-          </div>
-          <div class="project-logo column col-4 col-sm-12">
-          </div>
+
+      <div id="bookworm" class="columns columns-vcentered">
+        <div>
+          <h2><a href="https://github.com/zbaylin/bookworm">Bookworm</a></h2>
+          <p>BookWorm is a project I developed for the FBLA Coding and Programming event in 2019.
+            The project description mandated that submissions create a GUI that helps manage the
+            distribution of eBooks from librarians to patrons. I chose to write my GUI in Python 
+            using the Qt GUI framework, combining the two using the officially supported Qt for
+            Python bindings. It supported numerous features, like manager/user stratification, 
+            a centralized cloud based backend, PDF DRM generation, and more. It won first place
+            at the Georgia FBLA State Leadership Conference, and fifth place at the National 
+            Leadership Conference in San Antonio, TX.
+          </p>
         </div>
       </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
