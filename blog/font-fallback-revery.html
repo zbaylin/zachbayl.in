@@ -23,14 +23,14 @@
       and Onivim. Font fallback is one of those features that all GUI frameworks nowadays
       simply must have. I'm sure we've all seen the infamous "unknown glyph" mark at least
       once. Seeing ￼ or � might be passable for an emoji here or there, but it's simply
-      unaccpetable if you're expecting to see your native language on the screen.<p>
+      unacceptable if you're expecting to see your native language on the screen.<p>
       
       <h2>The Problem</h2>
       <p>Back in the old days, most digital text was represented in ASCII. As far as text encodings
       go, ASCII is pretty much as simple as it gets -- each character is an 8 bit/1 byte
       integer that corresponds to a character. However, that only leaves us with 2<sup>8</sup>
-      or 256 charcters we can represent. If you're only ever writing English/Latin scripts,
-      that's more than enough. The probelm with ASCII is its 'A' - "American."</p>
+      or 256 characters we can represent. If you're only ever writing English/Latin scripts,
+      that's more than enough. The problem with ASCII is its 'A' - "American."</p>
 
       <p>Eventually UTF-8 and Unicode came along with the ability to represent an arbitrary
       number of characters while still maintaining compatibility with ASCII. Great! Except
@@ -74,7 +74,7 @@
       This is especially true in a language like OCaml/ReasonML, where for historical reasons
       (as described above), it's assumed that all characters in a string take up a single byte.</p>
 
-      <p>A sample output from Harfbuzz can be seen below. For demonstation purposes, I chose to
+      <p>A sample output from Harfbuzz can be seen below. For demonstration purposes, I chose to
       shape the string "κόσμε" because each character has a different size</p>
 <code><pre>-- κόσμε --
 - SHAPE: GlyphID: 539 Cluster: 0
@@ -170,7 +170,7 @@ for each glyph and cluster pair:
       strings to "just work"™️. One of the biggest was text wrapping. One of my good friends (the one who introduced me
       to Revery in the first place), <a href="https://ohad.space">Ohad Rau</a>, wrote the text wrapping
       algorithm initially, and he was extremely helpful in my quest to get the algorithm UTF-8 compliant.</p>
-      
+
       <p>I also want to thank <a href="https://github.com/bryphe">Bryan Phelps</a> and 
       <a href="https://github.com/glennsl">Glenn Slotte</a> for some algorithm suggestions and improvements.
       Both of them have been immensely helpful not only for this feature, but the entire summer. I've learned
