@@ -129,6 +129,10 @@ div.figure > img {
   height: auto;
 }
 
+div.figure > p {
+  text-align: center;
+}
+
 code > pre{
   background: #E6E2E9;
   padding: 8px;

@@ -48,7 +48,9 @@
       </div>
 
       <p>I should note that as of now, Onivim2 is in it's alpha stage (soon to be beta!),
-      so this kind of bug is to be expected. The crux of the issue here is that JetBrains Mono,
+      so this kind of bug is to be expected.</p>
+
+      <p>The crux of the issue here is that JetBrains Mono,
       while a great font, does not contain any CJK (Chinese, Japanese, Korean) glyphs. In most
       cases, it's the job of the underlying UI framework to find a font that <i>does</i>
       support these glyphs. Revery should be no different, and the following is how I solved this problem in it.</p>
@@ -59,12 +61,11 @@
 
       <div class="figure">
         <img src="/img/blog/revery-text-render-pipeline.svg" />
+        <p>If you're interested in learning more about Revery's tech stack, the library's creator (and my boss),
+          Bryan Phelps, gave this great talk about it <a href="https://www.youtube.com/watch?v=K3JqNaw0-Us">here</a>.
+          Note that some of Revery's tech has changed since then (namely the inclusion of Skia), but the core
+          principles are still the same!</p>
       </div>
-
-      <p>If you're interested in learning more about Revery's tech stack, the library's creator (and my boss),
-      Bryan Phelps, gave this great talk about it <a href="https://www.youtube.com/watch?v=K3JqNaw0-Us">here</a>.
-      Note that some of Revery's tech has changed since then (namely the inclusion of Skia), but the core
-      principles are still the same!</p>
 
       <p>This is the most simplified case: we already have a typeface loaded into memory
       and it supports all the glyphs we requested from it. In this case, we ask Harfbuzz,
