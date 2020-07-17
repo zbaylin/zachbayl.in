@@ -56,11 +56,6 @@ a:hover {
   color: #C7EBF0;
 }
 
-h1 {
-  display: inline-block;
-  border-bottom: 3px dashed #B2ABBF;
-}
-
 a.navbar-icon > img {
   padding: 2px;
   border: solid 2px #226CE0;
@@ -82,6 +77,7 @@ div.navbar-links > a:hover {
 
 div.main-content {
   display: flex;
+  flex-direction: column;
   width: 100%;
   margin: 16px;
   max-width: 1000px;
@@ -96,8 +92,56 @@ div.columns > * {
   margin: 0px 12px;
 }
 
+div.columns.columns-vcentered {
+  align-items: center;
+}
+
 img#me-avatar {
   width: 50%;
   height: auto;
 }
 
+h1.blog-title {
+  margin-bottom: 6px;
+}
+
+hr {
+  height: 0px;
+  border: none;
+  border-bottom: 2px dashed #B2ABBF;
+  width: 100%;
+}
+
+p {
+  margin: 6px 0px;
+}
+
+div.figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 0px;
+}
+
+div.figure > img {
+  max-width: 80%;
+  height: auto;
+}
+
+code > pre{
+  background: #E6E2E9;
+  padding: 8px;
+  border: 1px solid #BAA7B0;
+  border-radius: 4px;
+}
+
+p > code {
+  background: #E6E2E9;
+  border: 1px solid #BAA7B0;
+  border-radius: 2px;
+}
+
+img.project-img {
+  max-width: 20vw;
+}
