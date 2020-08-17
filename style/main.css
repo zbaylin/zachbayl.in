@@ -149,3 +149,22 @@ p > code {
 img.project-img {
   max-width: 20vw;
 }
+
+@media only screen and (max-width: 768px) {
+  div.columns {
+    flex-direction: column;
+  }
+
+  div.columns.columns-vcentered {
+    justify-content: center;
+  }
+
+
+  section.navbar-section {
+    flex-direction: column;
+  }
+
+  section.navbar-section > * {
+    padding: 2px 0px;
+  }
+}
